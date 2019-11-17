@@ -4,6 +4,19 @@
 
 @tailwind utilities;
 
+
+.skewed-background::before {
+  content: "";
+  position: absolute; 
+  z-index: -1;
+  width: 100%;
+  margin-top: 100px;
+  height: 800px;
+  top: 0;
+  transform: skewY(-8deg);
+  background: #F5F5F5;
+}
+
 .z-negative {
   z-index: -1;
 }
