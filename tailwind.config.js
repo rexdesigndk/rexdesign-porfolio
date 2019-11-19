@@ -1,22 +1,32 @@
 module.exports = {
   theme: {
     fontFamily: {
-     'body': ['Roboto', 'sans-serif'],
-          },
+      body: ["Roboto", "sans-serif"]
+    },
     screens: {
-      'xl': '1440px'
+      sm: "640px",
+      // => @media (min-width: 640px) { ... }
+
+      md: "768px",
+      // => @media (min-width: 768px) { ... }
+
+      lg: "1024px",
+      // => @media (min-width: 1024px) { ... }
+
+      xl: "1440px"
+      // => @media (min-width: 1280px) { ... }
     },
     container: {
-      center: true,
+      center: true
     },
     extend: {
       colors: {
-        'primary': '#0029FF',
-        'secondary': '#ececeb',
-        'accent': '#e25822',
+        primary: "#0029FF",
+        secondary: "#ececeb",
+        accent: "#e25822"
       }
     }
   },
   variants: {},
   plugins: []
-}
+};
