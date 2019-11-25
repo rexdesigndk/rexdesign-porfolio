@@ -52,6 +52,7 @@
               >
             </li>
           </ul>
+          <button class="inline-block md:hidden" id="menuToggle">menu</button>
         </div>
       </nav>
       <section class="pt-32">
@@ -382,17 +383,30 @@
                     placeholder="Explain the scope/requirements for your website. Any ideas are welcome :)"
                   ></textarea>
                   <button
-                  class="w-full bg-primary font-bold rounded py-5 px-2 mb-3 hover:bg-accent focus:shadow-outline"
-                  type="submit"
-                >
-                  Get Qoute
-                </button>
-                <div class="text-sm">
-                  This site is protected by reCAPTCHA and the Google
-                  <a class="text-accent hover:pointer-cursor" href="https://policies.google.com/privacy">Privacy Policy</a> and
-                  <a class="text-accent hover:pointer-cursor" href="https://policies.google.com/terms">Terms of Service</a> apply.
-                </div>
-                <div class="g-recaptcha" data-sitekey="6Le7ZMQUAAAAANJlNHcrLkGWahadudkPL-QZqdAw"></div>
+                    class="w-full bg-primary font-bold rounded py-5 px-2 mb-3 hover:bg-accent focus:shadow-outline"
+                    type="submit"
+                  >
+                    Get Qoute
+                  </button>
+                  <div class="text-sm">
+                    This site is protected by reCAPTCHA and the Google
+                    <a
+                      class="text-accent hover:pointer-cursor"
+                      href="https://policies.google.com/privacy"
+                      >Privacy Policy</a
+                    >
+                    and
+                    <a
+                      class="text-accent hover:pointer-cursor"
+                      href="https://policies.google.com/terms"
+                      >Terms of Service</a
+                    >
+                    apply.
+                  </div>
+                  <div
+                    class="g-recaptcha"
+                    data-sitekey="6Le7ZMQUAAAAANJlNHcrLkGWahadudkPL-QZqdAw"
+                  ></div>
                 </form>
               </div>
             </div>
@@ -434,7 +448,10 @@
                   class="fill-current cursor-pointer hover:text-gray-600"
                   href="#"
                   aria-label="my twitter account "
-                  ><box-icon name="twitter" type="logo"></box-icon
+                  ><svg width="24" height="24">
+                    <path
+                      d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 005.001-1.721 4.036 4.036 0 01-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 01-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 01-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 008.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 014.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 002.556-.973 4.02 4.02 0 01-1.771 2.22 8.073 8.073 0 002.319-.624 8.645 8.645 0 01-2.019 2.083z"
+                    /></svg
                 ></a>
               </li>
               <li class="mb-2">
@@ -463,7 +480,10 @@
                   class="fill-current cursor-pointer hover:text-gray-600"
                   href="#"
                   aria-label="my codepen profile"
-                  ><box-icon type="logo" name="codepen"></box-icon
+                  ><svg width="24" height="24">
+                    <path
+                      d="M21.838 8.445c0-.001-.001-.001 0 0l-.003-.004-.001-.001v-.001a.809.809 0 00-.235-.228l-9.164-6.08a.834.834 0 00-.898 0L2.371 8.214A.786.786 0 002 8.897v6.16a.789.789 0 00.131.448v.001l.002.002.01.015v.002h.001l.001.001.001.001c.063.088.14.16.226.215l9.165 6.082a.787.787 0 00.448.139.784.784 0 00.45-.139l9.165-6.082a.794.794 0 00.371-.685v-6.16a.793.793 0 00-.133-.452zm-9.057-4.172l6.953 4.613-3.183 2.112-3.771-2.536V4.273zm-1.592 0v4.189l-3.771 2.536-3.181-2.111 6.952-4.614zm-7.595 6.098l2.395 1.59-2.395 1.611v-3.201zm7.595 9.311l-6.96-4.617 3.195-2.15 3.765 2.498v4.269zm.795-5.653l-3.128-2.078 3.128-2.105 3.131 2.105-3.131 2.078zm.797 5.653v-4.27l3.766-2.498 3.193 2.15-6.959 4.618zm7.597-6.11l-2.396-1.611 2.396-1.59v3.201z"
+                    /></svg
                 ></a>
               </li>
             </ul>
@@ -476,7 +496,9 @@
         <p class="text-sm">Copyright © 2019 rexdesign</p>
       </div>
     </div>
-    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js?render=6Le7ZMQUAAAAANJlNHcrLkGWahadudkPL-QZqdAw"></script>
+    <script
+      async
+      src="https://www.google.com/recaptcha/api.js?render=6Le7ZMQUAAAAANJlNHcrLkGWahadudkPL-QZqdAw"
+    ></script>
   </body>
 </html>
