@@ -11,14 +11,21 @@
     <title>Rexdesign - Professional Web Development</title>
     <!-- Preconnects -->
     <link rel="preconnect" href="//fonts.googleapis.com" />
-    <link rel="preconnect" href="//unpkg.com" />
+    <link rel="preconnect" href="//www.gstatic.com" />
     <!-- Style-->
     <link rel="stylesheet" href="dist/main.css" />
     <!-- Font -->
     <link
-      href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap"
+      href="//fonts.googleapis.com/css?family=Work+Sans&display=swap"
       rel="stylesheet"
     />
+    <script src="https://www.google.com/recaptcha/api.js" async></script>
+    <script>
+      function onSubmit(token) {
+        document.getElementById("contactForm").submit();
+      }
+    </script>
+
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
   </head>
   <body class="overflow-x-hidden font-display">
@@ -55,10 +62,12 @@
           <button class="inline-block md:hidden" id="menuToggle">menu</button>
         </div>
       </nav>
-      <section class="pt-32">
+      <section class="pt-10 sm:pt-32">
         <div class="container p-2">
           <div class="flex flex-wrap">
-            <div class="w-full flex text-center flex-col items-center pb-24">
+            <div
+              class="w-full flex text-center flex-col items-center pb-12 sm:pb-24"
+            >
               <h1 class="font-display text-6xl text-black font-black mb-2">
                 I Code and Design Custom Websites
               </h1>
@@ -72,14 +81,15 @@
                 class="bg-primary text-black shadow rounded font-bold py-4 px-8 hover:bg-accent hover:shadow-lg focus:shadow-outline"
                 href="#orderSection"
               >
-                Order Now
+                Order
               </a>
             </div>
             <div class="w-full flex justify-center items-center">
               <picture class="w-full max-w-4xl">
                 <source srcset="src/img/hero_illustration_animated.svg" />
                 <img
-                  src="src/img/hero_illustration.svg"
+                  class="lazyload"
+                  data-src="src/img/hero_illustration.svg"
                   alt="Website being build "
                 />
               </picture>
@@ -89,7 +99,7 @@
       </section>
     </header>
     <main class="z-0">
-      <section class="pt-56" id="workSection">
+      <section class="pt-24 sm:pt-56" id="workSection">
         <div class="container p-2">
           <div class="text-center">
             <span
@@ -111,8 +121,8 @@
                 <div class="relative shadow-md overflow-hidden rounded-lg">
                   <div>
                     <img
-                      class="w-full h-auto"
-                      src="src/img/img_1.png"
+                      class="w-full h-auto lazyload"
+                      data-src="src/img/img_1.png"
                       alt="view of feather landingpage "
                     />
                   </div>
@@ -131,8 +141,8 @@
               >
                 <div class="relative shadow-lg overflow-hidden rounded-lg">
                   <img
-                    class="w-full h-auto"
-                    src="src/img/img_2.png"
+                    class="w-full h-auto lazyload"
+                    data-src="src/img/img_2.png"
                     alt="view of b&b website "
                   />
                   <div class="font-bold bg-white border-t rounded-b-lg p-6">
@@ -150,8 +160,8 @@
               >
                 <div class="relative shadow-lg overflow-hidden rounded-lg">
                   <img
-                    class="w-full h-auto"
-                    src="src/img/img_3.png"
+                    class="w-full h-auto lazyload"
+                    data-src="src/img/img_3.png"
                     alt="view of rpay website"
                   />
                   <div class="font-bold bg-white border-t rounded-b-lg p-6">
@@ -171,7 +181,7 @@
         </div>
       </section>
       <section
-        class="py-56 bg-scroll bg-center bg-no-repeat"
+        class="py-24 sm:py-56 bg-scroll bg-center bg-no-repeat"
         id="testimonialSection"
         style="background-image: url(src/img/bg.svg);"
       >
@@ -218,7 +228,7 @@
           </div>
         </div>
       </section>
-      <section class="pb-56" id="orderSection">
+      <section class="pb-24 sm:pb-56" id="orderSection">
         <div class="container p-2">
           <span
             class="inline-block font-bold text-sm rounded bg-primary shadow px-5 py-2"
@@ -362,7 +372,8 @@
                 class="bg-white shadow rounded border p-5 max-w-full lg:max-w-lg"
               >
                 <form
-                  action="https://getform.io/f/b2643ab9-9be8-468d-8b23-207a279fe23d"
+                  id="contactForm"
+                  action="https://usebasin.com/f/16a361cd346e"
                   method="POST"
                 >
                   <input
@@ -370,43 +381,33 @@
                     type="text"
                     name="name"
                     placeholder="Enter your name"
+                    required
+                    aria-label="Full name"
                   />
                   <input
                     class="w-full bg-white border rounded p-3 mb-3"
                     type="email"
                     name="email"
                     placeholder="Enter your email"
+                    required
+                    aria-label="email"
                   />
                   <textarea
                     class="w-full bg-white border rounded p-3 mb-3 h-48"
                     name="message"
                     placeholder="Explain the scope/requirements for your website. Any ideas are welcome :)"
+                    required
+                    aria-label="message"
                   ></textarea>
                   <button
-                    class="w-full bg-primary font-bold rounded py-5 px-2 mb-3 hover:bg-accent focus:shadow-outline"
+                    class="g-recaptcha w-full bg-primary font-bold rounded py-5 px-2 hover:bg-accent focus:shadow-outline"
+                    data-sitekey="6LcPf8QUAAAAALZ63_gShuNjg63FW84MDYlyJKXZ"
+                    data-badge="inline"
+                    data-callback="onSubmit"
                     type="submit"
                   >
                     Get Qoute
                   </button>
-                  <div class="text-sm">
-                    This site is protected by reCAPTCHA and the Google
-                    <a
-                      class="text-accent hover:pointer-cursor"
-                      href="https://policies.google.com/privacy"
-                      >Privacy Policy</a
-                    >
-                    and
-                    <a
-                      class="text-accent hover:pointer-cursor"
-                      href="https://policies.google.com/terms"
-                      >Terms of Service</a
-                    >
-                    apply.
-                  </div>
-                  <div
-                    class="g-recaptcha"
-                    data-sitekey="6Le7ZMQUAAAAANJlNHcrLkGWahadudkPL-QZqdAw"
-                  ></div>
                 </form>
               </div>
             </div>
@@ -414,91 +415,92 @@
         </div>
       </section>
     </main>
-    <footer class="w-full bg-secondary py-20">
+    <footer class="w-full bg-secondary py-5 sm:py-10 lg:py-20">
       <div class="container">
-        <div class="flex flex-row items-start">
-          <div class="w-1/3 mr-4 flex flex-col justify-start">
-            <div class="flex flex-col items-start">
-              <img src="/src/img/logo.svg" alt="rex design logo " />
+        <div class="flex flex-wrap flex-row items-start">
+          <div class="w-full sm:w-1/2 lg:w-1/4 mb-5 lg:mb-0 flex flex-col">
+            <div class="flex flex-col items-center sm:items-start">
+              <img
+                class="lazyload"
+                data-src="/src/img/logo.svg"
+                alt="rex design logo "
+              />
               <p>Simplicity is the ultimate sophistication.</p>
             </div>
           </div>
-          <div class="w-1/3 mr-4 flex flex-col justify-start">
-            <div class="flex flex-col items-start">
+          <div class="w-full sm:w-1/2 lg:w-1/4 m-0 mb-5 lg:mb-0 flex flex-col">
+            <div class="flex flex-col items-center sm:items-start">
               <h4 class="text-lg text-black font-bold mb-2">Company Info</h4>
               <p>Name: Rex Design</p>
               <p>Address: Wandallsvej 37 B, 1. tv.</p>
               <p>CVR: 40571299</p>
             </div>
           </div>
-          <div class="w-1/3 mr-4 flex flex-col justify-start">
-            <h4 class="text-lg text-black font-bold mb-2">Links</h4>
-            <ul class="flex flex-col">
-              <li>Header</li>
-              <li>Featured Work</li>
-              <li>Testimonial</li>
-              <li>Order Now</li>
-            </ul>
+          <div class="w-full sm:w-1/2 lg:w-1/4 mb-5 sm:mb-0 flex flex-col">
+            <div class="flex flex-col items-center sm:items-start">
+              <h4 class="text-lg text-black font-bold mb-2">Links</h4>
+              <ul class="flex flex-col text-center sm:text-left">
+                <li>
+                  <a href="//">TOS</a>
+                </li>
+                <li>
+                  <a href="//">Privacy</a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="w-1/3 flex flex-col justify-start">
-            <h4 class="text-lg text-black font-bold mb-2">Social</h4>
-            <ul class="flex flex-col">
-              <li>
-                <a
-                  class="fill-current cursor-pointer hover:text-gray-600"
-                  href="#"
-                  aria-label="my twitter account "
-                  ><svg width="24" height="24">
-                    <path
-                      d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 005.001-1.721 4.036 4.036 0 01-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 01-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 01-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 008.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 014.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 002.556-.973 4.02 4.02 0 01-1.771 2.22 8.073 8.073 0 002.319-.624 8.645 8.645 0 01-2.019 2.083z"
-                    /></svg
-                ></a>
-              </li>
-              <li class="mb-2">
-                <a
-                  class="fill-current cursor-pointer hover:text-gray-600"
-                  href="#"
-                  aria-label="my upwork profile "
-                >
-                  <svg
-                    class="w-6 h-6"
-                    xmlns="http://www.w3.org/2000/svg"
-                    aria-label="Upwork"
-                    role="img"
-                    viewBox="0 0 512 512"
+          <div class="w-full sm:w-1/2 lg:w-1/4 mb-5 sm:mb-0 flex flex-col">
+            <div class="flex flex-col items-center sm:items-start">
+              <h4 class="text-lg text-black font-bold mb-2">Social</h4>
+              <ul class="flex flex-row">
+                <li>
+                  <a
+                    class="fill-current text-blue-500 cursor-pointer hover:text-gray-600"
+                    href="#"
+                    aria-label="my twitter account "
+                    ><svg width="24" height="24">
+                      <path
+                        d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 005.001-1.721 4.036 4.036 0 01-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 01-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 01-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 008.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 014.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 002.556-.973 4.02 4.02 0 01-1.771 2.22 8.073 8.073 0 002.319-.624 8.645 8.645 0 01-2.019 2.083z"
+                      /></svg
+                  ></a>
+                </li>
+                <li class="mx-2">
+                  <a
+                    class="fill-current text-green-500 cursor-pointer hover:text-gray-600"
+                    href="#"
+                    aria-label="my upwork profile "
                   >
-                    <rect width="512" height="512" rx="15%" fill="#6fda44" />
-                    <path
-                      fill="#ffffff"
-                      d="M357.2,296.9c-17,0-33-7.2-47.4-18.9l3.5-16.6l0.1-0.6c3.2-17.6,13.1-47.2,43.8-47.2c23,0,41.7,18.7,41.7,41.7S380.2,296.9,357.2,296.9L357.2,296.9z M357.2,171.4c-39.2,0-69.5,25.4-81.9,67.3c-18.8-28.3-33.1-62.2-41.4-90.8h-42.2v109.7c0,21.7-17.6,39.3-39.3,39.3s-39.3-17.6-39.3-39.3V147.8H71v109.7c0,44.9,36.5,81.8,81.4,81.8s81.4-36.9,81.4-81.8v-18.4c8.2,17.1,18.2,34.4,30.4,49.6l-25.8,121.4h43.1l18.7-88c16.4,10.5,35.2,17.1,56.8,17.1c46.2,0,83.8-37.8,83.8-84.1C440.9,209,403.4,171.4,357.2,171.4"
-                    />
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a
-                  class="fill-current cursor-pointer hover:text-gray-600"
-                  href="#"
-                  aria-label="my codepen profile"
-                  ><svg width="24" height="24">
-                    <path
-                      d="M21.838 8.445c0-.001-.001-.001 0 0l-.003-.004-.001-.001v-.001a.809.809 0 00-.235-.228l-9.164-6.08a.834.834 0 00-.898 0L2.371 8.214A.786.786 0 002 8.897v6.16a.789.789 0 00.131.448v.001l.002.002.01.015v.002h.001l.001.001.001.001c.063.088.14.16.226.215l9.165 6.082a.787.787 0 00.448.139.784.784 0 00.45-.139l9.165-6.082a.794.794 0 00.371-.685v-6.16a.793.793 0 00-.133-.452zm-9.057-4.172l6.953 4.613-3.183 2.112-3.771-2.536V4.273zm-1.592 0v4.189l-3.771 2.536-3.181-2.111 6.952-4.614zm-7.595 6.098l2.395 1.59-2.395 1.611v-3.201zm7.595 9.311l-6.96-4.617 3.195-2.15 3.765 2.498v4.269zm.795-5.653l-3.128-2.078 3.128-2.105 3.131 2.105-3.131 2.078zm.797 5.653v-4.27l3.766-2.498 3.193 2.15-6.959 4.618zm7.597-6.11l-2.396-1.611 2.396-1.59v3.201z"
-                    /></svg
-                ></a>
-              </li>
-            </ul>
+                    <svg width="24" height="24" viewBox="0 0 56.7 56.7">
+                      <path
+                        d="M42.4 17.7c-5.3 0-9.3 3.5-10.9 9-2.5-3.9-4.5-8.3-5.6-12.1h-5.6v14.7c0 2.9-2.4 5.3-5.3 5.3s-5.3-2.4-5.3-5.3V14.7H4.3v14.7c0 6.1 4.9 11 10.9 11s10.9-4.9 10.9-11v-2.5c1.1 2.2 2.5 4.6 4 6.7l-3.5 16.3h5.7L34.7 38c2.2 1.4 4.7 2.2 7.7 2.2 6.1 0 11.1-5 11.1-11.4 0-6.1-5-11.1-11.1-11.1zm0 16.9c-2.2 0-4.5-1-6.3-2.5l.6-2.2v-.1c.4-2.4 1.7-6.4 5.8-6.4 3.1 0 5.6 2.5 5.6 5.6-.1 3.1-2.8 5.6-5.7 5.6z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="fill-current text-black cursor-pointer hover:text-gray-600"
+                    href="#"
+                    aria-label="my codepen profile"
+                    ><svg width="24" height="24">
+                      <path
+                        d="M21.838 8.445c0-.001-.001-.001 0 0l-.003-.004-.001-.001v-.001a.809.809 0 00-.235-.228l-9.164-6.08a.834.834 0 00-.898 0L2.371 8.214A.786.786 0 002 8.897v6.16a.789.789 0 00.131.448v.001l.002.002.01.015v.002h.001l.001.001.001.001c.063.088.14.16.226.215l9.165 6.082a.787.787 0 00.448.139.784.784 0 00.45-.139l9.165-6.082a.794.794 0 00.371-.685v-6.16a.793.793 0 00-.133-.452zm-9.057-4.172l6.953 4.613-3.183 2.112-3.771-2.536V4.273zm-1.592 0v4.189l-3.771 2.536-3.181-2.111 6.952-4.614zm-7.595 6.098l2.395 1.59-2.395 1.611v-3.201zm7.595 9.311l-6.96-4.617 3.195-2.15 3.765 2.498v4.269zm.795-5.653l-3.128-2.078 3.128-2.105 3.131 2.105-3.131 2.078zm.797 5.653v-4.27l3.766-2.498 3.193 2.15-6.959 4.618zm7.597-6.11l-2.396-1.611 2.396-1.59v3.201z"
+                      /></svg
+                  ></a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </footer>
-    <div class="w-full bg-white flex py-5">
+    <div class="w-full bg-white py-5 px-2">
       <div class="container">
-        <p class="text-sm">Copyright © 2019 rexdesign</p>
+        <p class="text-sm text text-center sm:text-left">
+          Copyright © 2019 rexdesign
+        </p>
       </div>
     </div>
-    <script
-      async
-      src="https://www.google.com/recaptcha/api.js?render=6Le7ZMQUAAAAANJlNHcrLkGWahadudkPL-QZqdAw"
-    ></script>
+    <script src="dist/app.js"></script>
   </body>
 </html>
