@@ -1,0 +1,16 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+
+/* Custom utilities */
+.z-negative {
+  z-index: -1;
+}
+
+/* Hides google recapthca badge  */
+.grecaptcha-badge {
+  visibility: hidden;
+}

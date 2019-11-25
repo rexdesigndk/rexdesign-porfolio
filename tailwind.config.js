@@ -25,15 +25,14 @@ module.exports = {
       md: '0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12)',
       lg: '0 3px 3px -2px rgba(0,0,0,.2), 0 3px 4px 0 rgba(0,0,0,.14), 0 1px 8px 0 rgba(0,0,0,.12)',
       xl: '0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12)',
-      inner: 'inset 0 2px 4px 0 rgba(0,0,0,0.06)',
       outline: '0 0 0 3px rgba(66,153,225,0.5)',
       focus: '0 0 0 3px rgba(66,153,225,0.5)',
       none: 'none',
     },
     extend: {
       colors: {
-        primary: 'hsl(33, 100%, 80%)',
-        secondary: '#ececeb',
+        primary: 'hsl(33, 100%, 70%)',
+        secondary: '#f5f5f5',
         accent: 'hsl(33, 100%, 49%)'
       }
     },
