@@ -1,8 +1,7 @@
 module.exports = {
   theme: {
     fontFamily: {
-      display: ['Roboto', 'sans-serif'],
-      body: ['Work Sans', 'sans-serif']
+      display: ['Raleway', 'Roboto', '-apple-system', 'Ubuntu', 'sans-serif'],
     },
     screens: {
       sm: '640px',
@@ -14,7 +13,7 @@ module.exports = {
       lg: '1024px',
       // => @media (min-width: 1024px) { ... }
 
-      xl: '1440px'
+      xl: '1400px'
       // => @media (min-width: 1280px) { ... }
     },
     container: {
@@ -32,11 +31,13 @@ module.exports = {
     extend: {
       colors: {
         primary: 'hsl(33, 100%, 70%)',
-        secondary: '#f5f5f5',
+        secondary: '#F6F9FC',
         accent: 'hsl(33, 100%, 49%)'
       }
     },
   },
-  variants: {},
+  variants: {
+   borderWidth: ['responsive', 'hover', 'focus']
+  },
   plugins: []
 };
