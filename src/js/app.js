@@ -7,11 +7,13 @@ var myLazyLoad = new LazyLoad({
 });
 
 AOS.init({
-  disable: 'mobile',
+  disable: window.innerWidth < 768,
   disable: window.matchMedia('(prefers-reduced-motion: reduce)').matches,
-  easing: 'ease-in-sine',
-  delay: 100,
-  duration: 600,
+  easing: 'ease-in-out-cubic',
+  delay: 300,
+  once: true,
+  duration: 800,
+  anchorPlacement: 'top-center'
 });
 
 let menuToggle = document.getElementById("menuToggle")
