@@ -14,6 +14,9 @@
   display: none;
 }
 
+.grecaptcha-badge {
+  margin-bottom: 1rem;
+}
 
 /* AOS Animations */
 /* purgecss start ignore */
