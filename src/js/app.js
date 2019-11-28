@@ -6,15 +6,15 @@ var myLazyLoad = new LazyLoad({
   load_delay: 100
 });
 
-// AOS.init({
-//   disable: window.innerWidth < 768,
-//   disable: window.matchMedia('(prefers-reduced-motion: reduce)').matches,
-//   easing: 'ease-in-out-cubic',
-//   delay: 300,
-//   once: true,
-//   duration: 800,
-//   anchorPlacement: 'top-center'
-// });
+AOS.init({
+  disable: window.innerWidth < 768,
+  disable: window.matchMedia('(prefers-reduced-motion: reduce)').matches,
+  easing: 'ease-in-out-cubic',
+  delay: 300,
+  once: true,
+  duration: 800,
+  anchorPlacement: 'top-center'
+});
 
 let menuToggle = document.getElementById("menuToggle")
 let menu = document.getElementById("menu")
