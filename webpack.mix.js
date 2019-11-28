@@ -6,7 +6,7 @@ mix
     require("tailwindcss"),
     require("autoprefixer"),
     require("@fullhuman/postcss-purgecss")({
-      content: ["index.html"],
+      content: ["index.html", "404.html"],
       from: ["src/css/main.css"],
       defaultExtractor: content => content.match(/[A-Za-z0-9-_:\/]+/g) || []
     })
