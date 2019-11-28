@@ -11,10 +11,6 @@
 
 /* Hides google recapthca badge  */
 .grecaptcha-badge {
-  display: none;
-}
-
-.grecaptcha-badge {
   margin-bottom: 1rem;
 }
 
