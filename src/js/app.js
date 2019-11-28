@@ -6,6 +6,8 @@ var myLazyLoad = new LazyLoad({
   load_delay: 100
 });
 
+window.addEventListener('load', AOS.refresh);
+
 AOS.init({
   disable: window.innerWidth < 768,
   disable: window.matchMedia('(prefers-reduced-motion: reduce)').matches,
