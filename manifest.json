@@ -1,0 +1,34 @@
+{
+  "dir": "ltr",
+  "lang": "English",
+  "name": "Rexdesign - Professional Custom Websites",
+  "scope": "/",
+  "display": "minimal-ui",
+  "start_url": "https://rexdesign.dev/",
+  "short_name": "Rexdesign - Pro",
+  "theme_color": "transparent",
+  "description": "Get your business online with a modern website that reflects your unique identity and brand. Rexdesign specializes in minimalist designs with fast load times.",
+  "orientation": "portrait",
+  "background_color": "transparent",
+  "related_applications": "",
+  "prefer_related_applications": "false",
+  "generated": "true",
+  "icons": [
+    {
+      "src": "https://rexdesign.dev/favicon-16x16.png",
+      "sizes": "16x16"
+    },
+    {
+      "src": "https://rexdesign.dev/favicon-32x32.png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "android-chrome-192x192.png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://rexdesign.dev/android-chrome-512x512.png",
+      "sizes": "512x512"
+    }
+  ]
+}
