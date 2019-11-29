@@ -9,11 +9,6 @@
   z-index: -1;
 }
 
-/* Hides google recapthca badge  */
-.grecaptcha-badge {
-  margin-bottom: 1rem;
-}
-
 /* AOS Animations */
 /* purgecss start ignore */
 
