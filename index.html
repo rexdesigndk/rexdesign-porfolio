@@ -20,12 +20,6 @@
       content="Get your business online with a modern website that reflects your unique identity and brand. Rexdesign specializes in minimalist designs with fast load times."
     />
     <title>Rexdesign - Professional Custom Websites</title>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script>
-      function onSubmit(token) {
-        document.getElementById("contactFrom").submit();
-      }
-    </script>
     <link rel="canonical" href="https://rexdesign.dev" />
     <!-- Preconnects -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -443,7 +437,6 @@
                     id="contactFrom"
                     name="rexdesign form"
                     netlify
-                    enctype="application/x-www-form-urlencoded"
                     data-netlify-recaptcha="true"
                     method="POST"
                   >
@@ -453,6 +446,7 @@
                       name="name"
                       placeholder="Enter your name"
                       aria-label="Write your full name"
+                      minlength="3"
                       required
                     />
                     <input
@@ -461,6 +455,7 @@
                       name="email"
                       placeholder="Enter your email"
                       aria-label="write your email "
+                      minlength="3"
                       required
                     />
                     <textarea
@@ -468,32 +463,17 @@
                       name="message"
                       placeholder="Explain the scope/requirements for your website. Any ideas are welcome :)"
                       aria-label="write your message "
+                      minlength="3"
                       required
                     ></textarea>
                     <button
-                      class="g-recaptcha w-full bg-primary font-bold rounded py-5 px-2 mb-5 hover:bg-accent focus:shadow-outline"
-                      data-sitekey="6LcPf8QUAAAAALZ63_gShuNjg63FW84MDYlyJKXZ"
-                      data-badge="inline"
-                      data-callback="onSubmit"
+                      class="w-full bg-primary font-bold rounded py-5 px-2 mb-5 hover:bg-accent focus:shadow-outline"
                       type="submit"
                     >
                       Get Qoute
                     </button>
                   </form>
                   <div class="text-xs">
-                    This site is protected by reCAPTCHA and the Google
-                    <a
-                      class="font-bold hover:text-accent focus:shadow-outline"
-                      href="https://policies.google.com/privacy"
-                      >Privacy Policy</a
-                    >
-                    and
-                    <a
-                      class="font-bold hover:text-accent focus:shadow-outline"
-                      href="https://policies.google.com/terms"
-                      >Terms of Service</a
-                    >
-                    apply.
                   </div>
                 </div>
               </div>
