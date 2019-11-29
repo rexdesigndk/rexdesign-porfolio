@@ -14,6 +14,11 @@
 .grecaptcha-badge {
   display: none;
 }
+
+form div .grecaptcha-badge {
+  margin-bottom: 1.25rem;
+}
+
 /* purgecss end ignore */
 
 /* AOS Animations */
