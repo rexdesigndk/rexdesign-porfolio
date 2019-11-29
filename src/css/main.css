@@ -9,18 +9,6 @@
   z-index: -1;
 }
 
-/* Hides recaptcha badge */
-/* purgecss start ignore */
-.grecaptcha-badge {
-  display: none;
-}
-
-form div .grecaptcha-badge {
-  margin-bottom: 1.25rem;
-}
-
-/* purgecss end ignore */
-
 /* AOS Animations */
 /* purgecss start ignore */
 
