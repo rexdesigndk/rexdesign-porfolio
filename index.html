@@ -31,12 +31,12 @@
       href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
       rel="stylesheet"
     />
-    <script async defer src="https://www.google.com/recaptcha/api.js"></script>
     <script>
       function onSubmit(token) {
-        document.getElementById("contactForm").submit();
+      document.getElementById("contactForm").submit();
       }
-    </script>
+      </script>
+      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel='manifest' href='manifest.json'>
   </head>
@@ -450,7 +450,7 @@
                       name="name"
                       placeholder="Enter your name"
                       required
-                      aria-label="Full name"
+                      aria-label="Write your full name"
                     />
                     <input
                       class="w-full bg-white border rounded p-3 mb-3"
@@ -458,14 +458,14 @@
                       name="email"
                       placeholder="Enter your email"
                       required
-                      aria-label="email"
+                      aria-label="write your email "
                     />
                     <textarea
                       class="w-full bg-white border rounded p-3 mb-3 h-48"
                       name="message"
                       placeholder="Explain the scope/requirements for your website. Any ideas are welcome :)"
                       required
-                      aria-label="message"
+                      aria-label="write your message "
                     ></textarea>
                     <button
                       class="g-recaptcha w-full bg-primary font-bold rounded py-5 px-2 mb-5 mt-5 hover:bg-accent focus:shadow-outline"
