@@ -31,12 +31,6 @@
       href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
       rel="stylesheet"
     />
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script>
-      function onSubmit(token) {
-        document.getElementById("contactForm").submit();
-      }
-    </script>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel='manifest' href='manifest.json'>
   </head>
@@ -440,8 +434,9 @@
               >
                 <div class="bg-white shadow rounded p-5 max-w-full lg:max-w-lg">
                   <form
-                    id="contactForm"
-                    action="https://usebasin.com/f/16a361cd346e"
+                    name="contact"
+                    data-netlify="true"
+                    action="success.html"
                     method="POST"
                   >
                     <input
@@ -468,34 +463,13 @@
                       aria-label="write your message "
                     ></textarea>
                     <button
-                      class="g-recaptcha w-full bg-primary font-bold rounded py-5 px-2 mb-5 hover:bg-accent focus:shadow-outline"
-                      data-sitekey="6LcPf8QUAAAAALZ63_gShuNjg63FW84MDYlyJKXZ" 
-                      data-callback="onSubmit"
-                      data-badge="inline"
-                      data-size="invisible"
+                      class="w-full bg-primary font-bold rounded py-5 px-2 mb-5 hover:bg-accent focus:shadow-outline"
                       type="submit"
                     >
                       Get Qoute
                     </button>
                   </form>
                   <div class="text-xs">
-                    This site is protected by reCAPTCHA and the Google
-                    <a
-                      class="font-bold hover:text-accent focus:shadow-outline"
-                      href="https://policies.google.com/privacy"
-                      target="_blank"
-                      rel="noopener"
-                      >Privacy Policy</a
-                    >
-                    and
-                    <a
-                      class="font-bold hover:text-accent focus:shadow-outline"
-                      href="https://policies.google.com/terms"
-                      target="_blank"
-                      rel="noopener"
-                      >Terms of Service</a
-                    >
-                    apply.
                   </div>
                 </div>
               </div>
