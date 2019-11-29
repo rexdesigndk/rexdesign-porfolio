@@ -2,7 +2,7 @@
   "lang" : "English",
   "name" : "Rexdesign - Professional Custom Websites",
   "scope" : "/",
-  "display" : "browser",
+  "display" : "minimal-ui",
   "start_url" : "https://rexdesign.dev/",
   "short_name" : "Rexdesign",
   "theme_color" : "transparent",
