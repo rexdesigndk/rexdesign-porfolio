@@ -31,11 +31,12 @@
       href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
       rel="stylesheet"
     />
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script async defer src="https://www.google.com/recaptcha/api.js"></script>
     <script>
       function onSubmit(token) {
         document.getElementById("contactForm").submit();
       }
+    </script>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel='manifest' href='manifest.json'>
   </head>
@@ -468,10 +469,9 @@
                     ></textarea>
                     <button
                       class="g-recaptcha w-full bg-primary font-bold rounded py-5 px-2 mb-5 mt-5 hover:bg-accent focus:shadow-outline"
-                      data-sitekey="6LcPf8QUAAAAALZ63_gShuNjg63FW84MDYlyJKXZ"
+                      data-sitekey="6LcPf8QUAAAAALZ63_gShuNjg63FW84MDYlyJKXZ" 
+                      data-callback='onSubmit' 
                       data-badge="inline"
-                      data-callback="onSubmit"
-                      type="submit"
                     >
                       Get Qoute
                     </button>
