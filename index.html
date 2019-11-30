@@ -38,7 +38,7 @@
   </head>
   <body class="overflow-x-hidden font-display">
     <div class="absolute top-0 w-full z-negative"></div>
-    <header class="pb-24 md:pb-64">
+    <header class="pb-24 md:pb-48">
       <nav class="w-full px-5">
         <div class="container flex p-2">
           <div class="flex-1">
@@ -47,21 +47,21 @@
           <ul class="list-none hidden md:flex items-center" id="menu">
             <li class="inline mr-5">
               <a
-                class="font-bold font-display text-black rounded py-3 px-3 hover:text-accent focus:shadow-outline"
+                class="font-bold font-display text-black rounded py-3 px-3 hover:text-accent focus:shadow-focus"
                 href="#workSection"
                 >Featured Work</a
               >
             </li>
             <li class="inline mr-5">
               <a
-                class="font-bold font-display text-black rounded py-3 px-3 hover:text-accent focus:shadow-outline"
+                class="font-bold font-display text-black rounded py-3 px-3 hover:text-accent focus:shadow-focus"
                 href="#testimonialSection"
                 >Testimonial</a
               >
             </li>
             <li class="inline">
               <a
-                class="font-bold font-display text-black border-accent border rounded py-3 px-4 hover:bg-accent focus:shadow-outline"
+                class="font-bold font-display text-black border-accent border-2 rounded py-3 px-4 hover:bg-accent hover:text-white focus:shadow-focus"
                 href="#orderSection"
                 >Order</a
               >
@@ -74,18 +74,18 @@
         <div class="container p-2">
           <div class="flex flex-wrap">
             <div
-              class="w-full flex text-center flex-col items-center pb-12 sm:pb-24"
+              class="w-full md:w-1/2 flex flex-col items-start flex-start text-left pb-12 sm:pb-24"
             >
               <h1
-                data-aos="fade-down"
-                class="font-display text-6xl text-black font-black leading-tight max-w-2xl mb-6"
+                data-aos="fade-right"
+                class="font-display text-3xl md:text-6xl text-black font-black leading-tight max-w-2xl mb-3"
               >
-                I Code and Design Minimalist Websites
+                I Code and Design Websites That Convertes
               </h1>
               <p
                 data-aos="fade-up"
                 data-aos-delay="100"
-                class="font-body text-2xl text-gray-700 leading-loose text-center mb-12 max-w-xl"
+                class="text-lg md:text-2xl text-gray-700 leading-loose text-left mb-12 max-w-md sm:max-w-xl "
               >
                 Get a professional developed website that is tailor made to your
                 specifications.
@@ -93,19 +93,19 @@
               <a
                 data-aos="fade-up"
                 data-aos-delay="200"
-                class="bg-primary text-black shadow rounded font-bold py-3 px-6 hover:bg-accent hover:shadow-lg focus:shadow-outline"
+                class="inline bg-primary text-white rounded font-bold py-3 px-4 hover:shadow-lg hover:bg-accent focus:shadow-focus"
                 href="#orderSection"
               >
                 Order Website
               </a>
             </div>
             <div
-              class="w-full flex justify-center items-center"
-              data-aos="fade-up"
+              class="w-full md:w-1/2 flex justify-center items-center"
+              data-aos="fade-left"
               data-aos-delay="400"
             >
-              <picture class="w-full max-w-4xl">
-                <source srcset="src/img/hero_illustration_animated.svg" />
+              <picture class="w-full max-w-2xl">
+                <source srcset="src/img/hero.svg" />
                 <img
                   class="lazyload"
                   data-src="src/img/hero_illustration.svg"
@@ -118,13 +118,13 @@
       </section>
     </header>
     <main>
-      <section class="pb-32" id="workSection">
+      <section class="pb-24 md:pb-32" id="workSection">
         <div class="container p-2">
-          <div class="flex flex-col items-center text-left">
+          <div class="flex flex-col items-start text-left">
             <span
               data-aos="fade"
-              data-aos-delay="200"
-              class="inline-block font-bold text-xs rounded bg-primary shadow py-2 px-3"
+              data-aos-delay="100"
+              class="inline-block font-bold text-xs rounded bg-primary text-white shadow py-2 px-3"
               >Featured Work</span
             >
             <h2
@@ -159,7 +159,7 @@
                     This resulted in a very lightweight template.
                   </p>
                   <button
-                    class="border rounded font-bold py-2 px-3 hover:bg-accent focus:shadow-outline"
+                    class="border-2 rounded font-bold py-2 px-4 hover:bg-accent hover:text-white hover:border-accent focus:shadow-focus"
                   >
                     Source
                   </button>
@@ -184,7 +184,7 @@
                     still keeping a professional look
                   </p>
                   <button
-                    class="border rounded font-bold py-2 px-3 hover:bg-accent focus:shadow-outline"
+                    class="border-2 rounded font-bold py-2 px-4 hover:bg-accent hover:text-white hover:border-accent focus:shadow-focus"
                   >
                     Source
                   </button>
@@ -220,7 +220,7 @@
                     page was designed by me.
                   </p>
                   <button
-                    class="border rounded font-bold py-2 px-3 hover:bg-accent focus:shadow-outline"
+                    class="border-2 rounded font-bold py-2 px-4 hover:bg-accent hover:text-white hover:border-accent focus:shadow-focus"
                   >
                     Source
                   </button>
@@ -231,28 +231,28 @@
         </div>
       </section>
       <section
-        class="py-24 md:py-64 bg-auto bg-center bg-no-repeat"
+        class="py-24 md:py-48 bg-auto bg-center bg-no-repeat"
         id="testimonialSection"
         style="background-image: url(src/img/bg_wave.svg);"
       >
         <div class="container p-2">
           <div data-aos="fade-right">
             <span
-              class="inline-block font-bold text-xs rounded bg-primary shadow py-2 px-3"
+              class="inline-block font-bold text-xs rounded bg-primary text-white shadow py-2 px-3"
               >Testimonial</span
             >
-            <h2 class="font-display text-5xl font-bold text-black mt-4 mb-20">
+            <h2 class="font-display text-5xl font-bold text-black mt-4 mb-12">
               Happy Customers Are Essential
             </h2>
           </div>
           <div class="flex flex-wrap items-center">
             <div
               class="w-full md:w-1/2 lg:w-1/3 pb-5 md:pb-0"
-              data-aos="fade-up"
-              data-aos-delay="200"
+              data-aos="fade-right"
+              data-aos-delay="500"
             >
               <div class="bg-white shadow-md rounded-lg p-10 mr-5">
-                <p class="font-body text-xl leading-relaxed mb-2">
+                <p class="text-xl leading-relaxed mb-2">
                   Has already done two jobs for me. I will continue to use his
                   services. Specification, examples on the fly and high quality
                   product delivery. Highly recommended!
@@ -264,23 +264,23 @@
               class="w-full md:w-1/2 lg:w-1/3 pb-5 md:pb-0"
               data-aos="fade-up"
             >
-              <div class="bg-primary text-black shadow-md rounded-lg p-10 mr-5">
-                <p class="font-body text-xl leading-relaxed mb-2">
+              <div class="bg-primary text-black shadow-lg rounded-lg p-10 mr-5">
+                <p class="text-xl text-white leading-relaxed mb-2">
                   Was a pleasure to work with and did a great job with our
                   project. He worked excellently with minimal instructions and
                   the end product is excellent. I would not hesitate to
                   recommend employing Jesper.
                 </p>
-                <p class="text-xl font-bold">- Donnacha Clifford</p>
+                <p class="text-xl text-white font-bold">- Donnacha Clifford</p>
               </div>
             </div>
             <div
               class="w-full md:w-1/2 lg:w-1/3"
-              data-aos="fade-up"
-              data-aos-delay="200"
+              data-aos="fade-left"
+              data-aos-delay="500"
             >
               <div class="bg-white shadow-md rounded-lg p-10">
-                <p class="font-body text-xl leading-relaxed mb-2">
+                <p class="text-xl leading-relaxed mb-2">
                   Has already done two jobs for me. I will continue to use his
                   services. Specification, examples on the fly and high quality
                   product delivery. Highly recommended!
@@ -291,7 +291,7 @@
           </div>
         </div>
       </section>
-      <section class="pb-24 md:pb-64 md:pt-32" id="featuresSection">
+      <section class="pb-24 md:pb-48 md:pt-32" id="featuresSection">
         <div class="container p-2">
           <div class="flex flex-wrap">
             <div
@@ -379,7 +379,7 @@
             <div class="w-full order-1 pb-10 md:w-1/2 md:pt-0 md:order-2">
               <span
                 data-aos="fade-up"
-                class="inline-block font-bold text-xs rounded bg-primary shadow py-2 px-3"
+                class="inline-block font-bold text-xs rounded bg-primary text-white shadow py-2 px-3"
                 >Features</span
               >
               <h2
@@ -397,7 +397,7 @@
           </div>
         </div>
       </section>
-      <section class="pb-24 md:pb-64" id="orderSection">
+      <section class="pb-24 md:pb-48" id="orderSection">
         <div
           class="bg-auto bg-center bg-no-repeat my-10"
           style="background-image: url(src/img/bg_box.svg);"
@@ -409,7 +409,7 @@
               >
                 <div class="md:py-5 md:px-5" data-aos="fade-right">
                   <span
-                    class="inline-block font-bold text-xs rounded bg-primary shadow py-2 px-3"
+                    class="inline-block font-bold text-xs rounded bg-primary text-white shadow py-2 px-3"
                     >Order Website</span
                   >
                   <h2
@@ -420,11 +420,11 @@
                   <h3 class="mb-2 font-bold text-lg font-display">
                     Websites starts from $200.
                   </h3>
-                  <p class="mb-2 font-body">
+                  <p class="mb-2">
                     As the website are custom made. The price depends on the
                     scope/requirements.
                   </p>
-                  <p class="mb-5 font-body">
+                  <p class="mb-5">
                     So let me hear what you have in mind and i'll qoute you a
                     price.
                   </p>
@@ -464,7 +464,7 @@
                       required
                     />
                     <textarea
-                      class="w-full bg-white border rounded p-3 mb-3 h-48"
+                      class="w-full bg-white border rounded max-h-xs min-h-xs resize-none p-3 mb-3 h-48"
                       name="message"
                       placeholder="Explain the scope/requirements for your website."
                       aria-label="write your message "
@@ -472,7 +472,7 @@
                       required
                     ></textarea>
                     <button
-                      class="w-full bg-primary font-bold rounded py-5 px-2 mb-5 hover:bg-accent focus:shadow-outline"
+                      class="w-full bg-primary text-white font-bold rounded py-5 px-2 mb-5 hover:bg-accent focus:shadow-focus"
                       type="submit"
                     >
                       Get Qoute
@@ -503,7 +503,7 @@
           </div>
           <div class="w-full sm:w-1/2 lg:w-1/4 m-0 mb-5 lg:mb-0 flex flex-col">
             <div class="flex flex-col items-center sm:items-start">
-              <h4 class="text-lg text-gray-700 font-bold mb-3">Company Info</h4>
+              <h4 class="text-lg text-black font-bold mb-3">Company Info</h4>
               <p>Name: Rex Design</p>
               <p>Address: Wandallsvej 37 B, 1. tv.</p>
               <p>CVR: 40571299</p>
@@ -511,25 +511,25 @@
           </div>
           <div class="w-full sm:w-1/2 lg:w-1/4 mb-5 sm:mb-0 flex flex-col">
             <div class="flex flex-col items-center sm:items-start">
-              <h4 class="text-lg text-gray-700 font-bold mb-3">Links</h4>
+              <h4 class="text-lg text-black font-bold mb-3">Links</h4>
               <ul class="flex flex-col text-center sm:text-left">
                 <li class="mb-2">
                   <a
-                    class="inline-block font-bold bg-white border rounded p-2 hover:text-accent"
+                    class="inline-block font-bold bg-white border rounded p-2 hover:text-primary focus:shadow-focus"
                     href="#workSection"
                     >Featured Work</a
                   >
                 </li>
                 <li class="mb-2">
                   <a
-                    class="inline-block font-bold bg-white border rounded p-2 hover:text-accent"
+                    class="inline-block font-bold bg-white border rounded p-2 hover:text-primary focus:shadow-focus"
                     href="#testimonialSection"
                     >Testimonial</a
                   >
                 </li>
                 <li>
                   <a
-                    class="inline-block font-bold bg-white border rounded p-2 hover:text-accent"
+                    class="inline-block font-bold bg-white border rounded p-2 hover:text-primary focus:shadow-focus"
                     href="#featuresSection"
                     >Features</a
                   >
@@ -539,7 +539,7 @@
           </div>
           <div class="w-full sm:w-1/2 lg:w-1/4 flex flex-col">
             <div class="flex flex-col items-center sm:items-start">
-              <h4 class="text-lg text-gray-700 font-bold mb-3">Social</h4>
+              <h4 class="text-lg text-black font-bold mb-3">Social</h4>
               <ul class="flex flex-col">
                 <li>
                   <a

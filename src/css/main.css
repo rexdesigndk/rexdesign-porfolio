@@ -9,6 +9,14 @@
   z-index: -1;
 }
 
+.max-h-xs {
+  max-height: 20rem;
+}
+
+.min-h-xs{
+  min-height: 20rem;
+}
+
 /* AOS Animations */
 /* purgecss start ignore */
 

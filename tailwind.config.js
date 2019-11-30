@@ -30,9 +30,9 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: 'hsl(33, 100%, 70%)',
-        secondary: '#F6F9FC',
-        accent: 'hsl(33, 100%, 49%)'
+        primary: '#4C64AC',
+        accent: '#2F3E6B',
+        secondary: '#F6F9FC'
       }
     },
   },
