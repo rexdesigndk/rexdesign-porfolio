@@ -1,5 +1,12 @@
 import LazyLoad from "vanilla-lazyload";
 import AOS from "aos";
+var WebFont = require("webfontloader");
+
+WebFont.load({
+  google: {
+    families: ["Raleway:400,700"]
+  }
+});
 
 var myLazyLoad = new LazyLoad({
   elements_selector: ".lazyload",
@@ -8,17 +15,17 @@ var myLazyLoad = new LazyLoad({
 
 AOS.init({
   disable: window.innerWidth < 768,
-  disable: window.matchMedia('(prefers-reduced-motion: reduce)').matches,
-  easing: 'ease-in-out-cubic',
+  disable: window.matchMedia("(prefers-reduced-motion: reduce)").matches,
+  easing: "ease-in-out-cubic",
   delay: 300,
   once: true,
   duration: 800,
-  anchorPlacement: 'top-center'
+  anchorPlacement: "top-center"
 });
 
-let menuToggle = document.getElementById("menuToggle")
-let menu = document.getElementById("menu")
+let menuToggle = document.getElementById("menuToggle");
+let menu = document.getElementById("menu");
 
 menuToggle.addEventListener("click", function() {
-  menu.classList.toggle("hidden")
+  menu.classList.toggle("hidden");
 });
