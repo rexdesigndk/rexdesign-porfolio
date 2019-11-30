@@ -1,5 +1,14 @@
 import LazyLoad from "vanilla-lazyload";
 import AOS from "aos";
+var WebFont = require('webfontloader');
+
+WebFont.load({
+  google: {
+    families: [
+      'Raleway:400,700&display=swap',
+    ],
+  },
+})
 
 var myLazyLoad = new LazyLoad({
   elements_selector: ".lazyload",
