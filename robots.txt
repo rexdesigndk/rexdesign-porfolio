@@ -1,3 +1,2 @@
 User-agent: * 
-Disallow: /therms.html
-Disallow: /privacy.html
+Disallow: 
