@@ -15,19 +15,19 @@
   "generated": "true",
   "icons": [
     {
-      "src": "https://rexdesign.dev/favicon-16x16.png",
+      "src": "dist/img/favicon-16x16.png",
       "sizes": "16x16"
     },
     {
-      "src": "https://rexdesign.dev/favicon-32x32.png",
+      "src": "dist/img/favicon-32x32.png",
       "sizes": "32x32"
     },
     {
-      "src": "android-chrome-192x192.png",
+      "src": "dist/img/android-chrome-192x192.png",
       "sizes": "192x192"
     },
     {
-      "src": "https://rexdesign.dev/android-chrome-512x512.png",
+      "src": "dist/img/android-chrome-512x512.png",
       "sizes": "512x512"
     }
   ]

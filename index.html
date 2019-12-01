@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- build with tailwind. This is the way -->
+<!-- Rexdesign. This is the way -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,8 +9,9 @@
       name="description"
       content="Get your business online with a modern website that reflects your unique identity and brand. Rexdesign specializes in minimalist designs with fast load times."
     />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@rexdesigndk" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@rexdesign" />
     <meta
       name="twitter:title"
       content="Rexdesign - Professional Custom Websites"
@@ -19,24 +20,46 @@
       name="twitter:description"
       content="Get your business online with a modern website that reflects your unique identity and brand. Rexdesign specializes in minimalist designs with fast load times."
     />
-    <meta property="og:type" content="business.business" />
     <meta
-      property="og:title"
-      content="Rexdesign - Professional Custom Websites"
+      name="twitter:image"
+      content="https://rexdesign.dev/dist/img/preview_img.png"
     />
-    <meta property="og:url" content="https://rexdesign.dev" />
+    <!-- Open Graph -->
+    <meta property="og:type" content="business.business" />
+    <meta property="og:title" content="Rexdesign" />
+    <meta property="og:url" content="https://rexdesign.dev/" />
+    <meta
+      property="og:image"
+      content="https://rexdesign.dev/dist/img/preview_img.png"
+    />
     <meta property="business:contact_data:country_name" content="Denmark" />
+    <!-- Title -->
     <title>Rexdesign - Professional Custom Websites</title>
-    <link rel="canonical" href="https://rexdesign.dev" />
+    <!-- Root URL -->
+    <link rel="canonical" href="https://rexdesign.dev/" />
     <!-- Preconnects -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://www.gstatic.com" />
     <!-- Style-->
     <link rel="stylesheet" href="dist/main.css" />
     <!-- Favicons   -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="dist/imgapple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="dist/imgfavicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="dist/imgfavicon-16x16.png"
+    />
     <!-- Manifest file -->
     <link rel="manifest" href="/manifest.json" />
   </head>
@@ -46,7 +69,7 @@
       <nav class="w-full px-5">
         <div class="container flex py-5">
           <div class="flex-1">
-            <img src="src/img/logo.svg" alt="rex design logo " />
+            <img src="dist/img/logo.svg" alt="rex design logo " />
           </div>
           <ul class="list-none hidden md:flex items-center" id="menu">
             <li class="inline mr-5">
@@ -89,7 +112,7 @@
                 data-aos="fade-right"
                 class="font-display text-3xl md:text-6xl text-black font-black leading-tight max-w-2xl mb-3"
               >
-                I Code and Design Websites That Convertes
+                I Code and Design Static Websites
               </h1>
               <p
                 data-aos="fade-up"
@@ -113,14 +136,11 @@
               data-aos="fade-left"
               data-aos-delay="600"
             >
-              <picture class="w-full max-w-2xl">
-                <source srcset="src/img/hero.svg" />
-                <img
-                  class="lazyload"
-                  data-src="src/img/hero_illustration.svg"
-                  alt="Website being build "
-                />
-              </picture>
+              <img
+                class="lazyload w-full"
+                data-src="dist/img/hero.svg"
+                alt="Illustration of website being build "
+              />
             </div>
           </div>
         </div>
@@ -151,7 +171,7 @@
                 <div class="w-full md:w-1/2">
                   <img
                     class="w-full h-auto lazyload"
-                    data-src="src/img/img_1.png"
+                    data-src="dist/img/img_1.png"
                     alt="view of feather landingpage "
                   />
                 </div>
@@ -201,7 +221,7 @@
                 <div class="w-full order-1 md:w-1/2 md:order-2">
                   <img
                     class="w-full h-auto lazyload"
-                    data-src="src/img/img_2.png"
+                    data-src="dist/img/img_2.png"
                     alt="view of feather landingpage "
                   />
                 </div>
@@ -214,7 +234,7 @@
                 <div class="w-full md:w-1/2">
                   <img
                     class="w-full h-auto lazyload"
-                    data-src="src/img/img_3.png"
+                    data-src="dist/img/img_3.png"
                     alt="view of feather landingpage "
                   />
                 </div>
@@ -242,7 +262,7 @@
       <section
         class="pb-12 md:py-48 bg-auto bg-center bg-no-repeat"
         id="testimonialSection"
-        style="background-image: url(src/img/bg_wave.svg);"
+        style="background-image: url(dist/img/bg_wave.svg);"
       >
         <div class="container p-2">
           <div data-aos="fade-right">
@@ -411,7 +431,7 @@
       <section class="pb-12 md:pb-48" id="orderSection">
         <div
           class="bg-auto bg-center bg-no-repeat my-10"
-          style="background-image: url(src/img/bg_box.svg);"
+          style="background-image: url(dist/img/bg_box.svg);"
         >
           <div class="container p-2">
             <div class="flex flex-wrap">
@@ -508,7 +528,7 @@
             <div class="flex flex-col items-center sm:items-start">
               <img
                 class="lazyload mb-5"
-                data-src="/src/img/logo.svg"
+                data-src="dist/img/logo.svg"
                 alt="rex design logo "
               />
               <p>Simplicity is the ultimate sophistication.</p>
