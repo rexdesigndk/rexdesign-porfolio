@@ -2,6 +2,11 @@ import LazyLoad from "vanilla-lazyload";
 import AOS from "aos";
 var WebFont = require('webfontloader');
 
+var myLazyLoad = new LazyLoad({
+  elements_selector: ".lazyload",
+  load_delay: 100
+});
+
 WebFont.load({
   google: {
     families: [
@@ -10,13 +15,8 @@ WebFont.load({
   },
 })
 
-var myLazyLoad = new LazyLoad({
-  elements_selector: ".lazyload",
-  load_delay: 100
-});
-
 AOS.init({
-  disable: window.innerWidth < 768,
+  disable: 'mobile',
   disable: window.matchMedia("(prefers-reduced-motion: reduce)").matches,
   easing: "ease-in-out-cubic",
   delay: 300,
