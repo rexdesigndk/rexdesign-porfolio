@@ -66,9 +66,9 @@
   <body class="overflow-x-hidden font-display antialiased">
     <div class="absolute top-0 w-full z-negative"></div>
     <header class="pb-24 md:pb-48">
-      <nav class="w-full px-5">
-        <div class="container flex flex-wrap py-5 md:py-10">
-          <div class="flex items-center flex-shrink-0 md:flex-shrink">
+      <div class="container">
+        <nav class="flex items-center justify-between flex-wrap border-b md:border-none p-5 md:py-10">
+          <div class="flex items-center flex-shrink-0">
             <img src="dist/img/logo.svg" alt="rex design logo " />
           </div>
           <div class="block md:hidden">
@@ -77,33 +77,33 @@
             </button>
           </div>
           <ul
-            class="w-full block flex-grow py-5 md:py-0 md:flex md:items-center"
+            class="hidden flex-row w-full pt-10 pb-5 md:p-0 md:flex md:flex-1 md:justify-end"
             id="menu"
           >
-            <li class="block mb-5 md:mb-0 md:inline md:mr-5">
+            <li class="block md:inline mb-5 md:mb-0 md:mr-5">
               <a
-                class="font-bold font-display text-black rounded py-3 px-3 hover:text-accent focus:shadow-focus"
+                class="font-bold font-display text-black rounded md:py-3 md:px-3 hover:text-accent focus:shadow-focus"
                 href="#workSection"
                 >Featured Work</a
               >
             </li>
-            <li class="block mb-5 md:mb-0 md:inline md:mr-5">
+            <li class="block md:inline mb-5 md:mb-0 md:mr-5">
               <a
-                class="font-bold font-display text-black rounded py-3 px-3 hover:text-accent focus:shadow-focus"
+                class="font-bold font-display text-black rounded md:py-3 md:px-3 hover:text-accent focus:shadow-focus"
                 href="#testimonialSection"
                 >Testimonial</a
               >
             </li>
             <li class="block md:inline">
               <a
-                class="font-bold font-display text-black border-accent border-2 rounded py-3 px-4 hover:bg-accent hover:text-white focus:shadow-focus"
+                class="font-bold font-display text-black border-accent border-2 rounded md:py-3 md:px-4 hover:bg-accent hover:text-white focus:shadow-focus"
                 href="#orderSection"
                 >Order</a
               >
             </li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
       <section class="pt-10 md:pt-32">
         <div class="container px-5">
           <div class="flex flex-wrap">
@@ -159,7 +159,7 @@
               >Featured Work</span
             >
             <h2
-              class="font-display text-3xl md:text-5xl font-bold text-black mt-4 mb-20"
+              class="font-display text-3xl font-bold text-black mt-4 mb-10 md:text-5xl md:mb-20"
               data-aos="fade"
             >
               Take A Look At Some Of My Work
@@ -534,7 +534,7 @@
     <footer class="w-full bg-secondary py-12 lg:py-20">
       <div class="container px-5">
         <div class="flex flex-wrap flex-row items-start">
-          <div class="w-full sm:w-1/2 lg:w-1/4 mb-5 lg:mb-0 flex flex-col">
+          <div class="w-full flex flex-col mb-5 sm:w-1/2 lg:mb-0 lg:w-1/4">
             <div class="flex flex-col items-center sm:items-start">
               <img
                 class="lazyload mb-5"
@@ -544,7 +544,7 @@
               <p>Simplicity is the ultimate sophistication.</p>
             </div>
           </div>
-          <div class="w-full sm:w-1/2 lg:w-1/4 m-0 mb-5 lg:mb-0 flex flex-col">
+          <div class="w-full flex flex-col m-0 mb-5 sm:w-1/2 lg:w-1/4 lg:mb-0l">
             <div class="flex flex-col items-center sm:items-start">
               <h4 class="text-lg text-black font-bold mb-3">Company Info</h4>
               <p>Name: Rex Design</p>
@@ -552,27 +552,27 @@
               <p>CVR: 40571299</p>
             </div>
           </div>
-          <div class="w-full sm:w-1/2 lg:w-1/4 mb-5 sm:mb-0 flex flex-col">
+          <div class="w-full mb-5 flex flex-col sm:mb-0 sm:w-1/2 lg:w-1/4">
             <div class="flex flex-col items-center sm:items-start">
               <h4 class="text-lg text-black font-bold mb-3">Links</h4>
               <ul class="flex flex-col text-center sm:text-left">
                 <li class="mb-2">
                   <a
-                    class="inline-block font-bold bg-white border rounded p-2 hover:text-primary focus:shadow-focus"
+                    class="inline-block font-bold hover:text-primary focus:shadow-focus"
                     href="#workSection"
                     >Featured Work</a
                   >
                 </li>
                 <li class="mb-2">
                   <a
-                    class="inline-block font-bold bg-white border rounded p-2 hover:text-primary focus:shadow-focus"
+                    class="inline-block font-bold hover:text-primary focus:shadow-focus"
                     href="#testimonialSection"
                     >Testimonial</a
                   >
                 </li>
                 <li>
                   <a
-                    class="inline-block font-bold bg-white border rounded p-2 hover:text-primary focus:shadow-focus"
+                    class="inline-block font-bold hover:text-primary focus:shadow-focus"
                     href="#featuresSection"
                     >Features</a
                   >
