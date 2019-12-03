@@ -67,26 +67,34 @@
     <div class="absolute top-0 w-full z-negative"></div>
     <header class="pb-24 md:pb-48">
       <nav class="w-full px-5">
-        <div class="container flex py-5 md:py-10">
-          <div class="flex-1">
+        <div class="container flex flex-wrap py-5 md:py-10">
+          <div class="flex items-center flex-shrink-0 md:flex-shrink">
             <img src="dist/img/logo.svg" alt="rex design logo " />
           </div>
-          <ul class="list-none hidden absolute md:flex md:relative items-center" id="menu">
-            <li class="inline mr-5">
+          <div class="block md:hidden">
+            <button class="border-2 rounded font-bold p-2" id="menuToggle">
+              menu
+            </button>
+          </div>
+          <ul
+            class="w-full block flex-grow py-5 md:py-0 md:flex md:items-center"
+            id="menu"
+          >
+            <li class="block mb-5 md:mb-0 md:inline md:mr-5">
               <a
                 class="font-bold font-display text-black rounded py-3 px-3 hover:text-accent focus:shadow-focus"
                 href="#workSection"
                 >Featured Work</a
               >
             </li>
-            <li class="inline mr-5">
+            <li class="block mb-5 md:mb-0 md:inline md:mr-5">
               <a
                 class="font-bold font-display text-black rounded py-3 px-3 hover:text-accent focus:shadow-focus"
                 href="#testimonialSection"
                 >Testimonial</a
               >
             </li>
-            <li class="inline">
+            <li class="block md:inline">
               <a
                 class="font-bold font-display text-black border-accent border-2 rounded py-3 px-4 hover:bg-accent hover:text-white focus:shadow-focus"
                 href="#orderSection"
@@ -94,12 +102,6 @@
               >
             </li>
           </ul>
-          <button
-            class="inline-block border-2 rounded font-bold p-2 md:hidden"
-            id="menuToggle"
-          >
-            menu
-          </button>
         </div>
       </nav>
       <section class="pt-10 md:pt-32">
@@ -187,11 +189,14 @@
                     frameworks. Which is very rare at template marketplaces.
                     This resulted in a very lightweight template.
                   </p>
-                  <a href="https://www.templatemonster.com/landing-page-template/feather-landing-page-template-86620.html" target="_blank" rel="noopener"
+                  <a
+                    href="https://www.templatemonster.com/landing-page-template/feather-landing-page-template-86620.html"
+                    target="_blank"
+                    rel="noopener"
                     class="border-2 rounded font-bold py-2 px-4 hover:bg-accent hover:text-white hover:border-accent focus:shadow-focus"
                   >
                     Source
-                </a>
+                  </a>
                 </div>
               </div>
             </div>
@@ -212,11 +217,14 @@
                     the end product was a mix of modern/minimalist design. While
                     still keeping a professional look
                   </p>
-                  <a href="https://www.islandheightsbandb.com/" target="_blank" rel="noopener"
+                  <a
+                    href="https://www.islandheightsbandb.com/"
+                    target="_blank"
+                    rel="noopener"
                     class="border-2 rounded font-bold py-2 px-4 hover:bg-accent hover:text-white hover:border-accent focus:shadow-focus"
                   >
                     Source
-                </a>
+                  </a>
                 </div>
                 <div class="w-full order-1 md:w-1/2 md:order-2">
                   <img
@@ -248,11 +256,14 @@
                     simple. Everything from the dashboard, login and landing
                     page was designed by me.
                   </p>
-                  <a href="https://rexdigital.group/" target="_blank" rel="noopener"
+                  <a
+                    href="https://rexdigital.group/"
+                    target="_blank"
+                    rel="noopener"
                     class="border-2 rounded font-bold py-2 px-4 hover:bg-accent hover:text-white hover:border-accent focus:shadow-focus"
                   >
                     Source
-                </a>
+                  </a>
                 </div>
               </div>
             </div>
@@ -295,7 +306,9 @@
               class="w-full md:w-1/2 lg:w-1/3 pb-5 md:pb-0"
               data-aos="fade-up"
             >
-              <div class="bg-primary text-black shadow-lg rounded-lg p-10 sm:mr-5">
+              <div
+                class="bg-primary text-black shadow-lg rounded-lg p-10 sm:mr-5"
+              >
                 <p class="text-xl text-white leading-relaxed mb-2">
                   Was a pleasure to work with and did a great job with our
                   project. He worked excellently with minimal instructions and
@@ -452,8 +465,8 @@
                     Websites starts from $200.
                   </h3>
                   <p class="mb-2">
-                    Because the websites are custom made. The price depends on the
-                    scope/requirements.
+                    Because the websites are custom made. The price depends on
+                    the scope/requirements.
                   </p>
                   <p class="mb-5">
                     So let me hear what you have in mind and i'll qoute you a
@@ -461,10 +474,7 @@
                   </p>
                 </div>
               </div>
-              <div
-                class="w-full lg:w-1/2 flex items-center"
-                data-aos="fade-up"
-              >
+              <div class="w-full lg:w-1/2 flex items-center" data-aos="fade-up">
                 <div
                   class="bg-white shadow-lg rounded p-5 max-w-full lg:max-w-lg"
                 >
