@@ -1,6 +1,6 @@
 import LazyLoad from "vanilla-lazyload";
 import AOS from "aos";
-var WebFont = require('webfontloader');
+var WebFont = require("webfontloader");
 
 var myLazyLoad = new LazyLoad({
   elements_selector: ".lazyload",
@@ -9,14 +9,12 @@ var myLazyLoad = new LazyLoad({
 
 WebFont.load({
   google: {
-    families: [
-      'Raleway:400,700&display=swap',
-    ],
-  },
-})
+    families: ["Raleway:400,700&display=swap"]
+  }
+});
 
 AOS.init({
-  disable: 'mobile',
+  disable: "mobile",
   disable: window.matchMedia("(prefers-reduced-motion: reduce)").matches,
   easing: "ease-in-out-cubic",
   delay: 300,
@@ -29,5 +27,15 @@ let menuToggle = document.getElementById("menuToggle");
 let menu = document.getElementById("menu");
 
 menuToggle.addEventListener("click", function() {
-  menu.classList.toggle("hidden");
+
+  if (menu.classList.contains("active")) {
+    this.setAttribute("aria-expanded", "false");
+    menu.classList.remove("active");
+    menu.classList.remove("hidden");
+  } else {
+    menu.classList.add("active");
+    menu.classList.add("hidden");
+    this.setAttribute("aria-expanded", "true");
+  }
+
 });
