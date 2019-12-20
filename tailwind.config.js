@@ -20,9 +20,9 @@ module.exports = {
       center: true
     },
     boxShadow: {
-      default: '0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12)',
+      default: '  0 0px 0.7px rgba(0, 0, 0, 0.028), 0 0px 2.2px rgba(0, 0, 0, 0.042), 0 0px 10px rgba(0, 0, 0, 0.07)',
       md: '0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12)',
-      lg: '0 3px 3px -2px rgba(0,0,0,.2), 0 3px 4px 0 rgba(0,0,0,.14), 0 1px 8px 0 rgba(0,0,0,.12)',
+      lg: '0 0px 0.7px rgba(0, 0, 0, 0.028), 0 4.5px 6.7px rgba(0, 0, 0, 0.042), 0 20px 30px rgba(0, 0, 0, 0.07)',
       xl: '0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12)',
       outline: '0 0 0 3px rgba(66,153,225,0.5)',
       focus: '0 0 0 3px rgba(66,153,225,0.5)',
@@ -32,7 +32,7 @@ module.exports = {
       colors: {
         primary: '#4C64AC',
         accent: '#2F3E6B',
-        secondary: '#F6F9FC'
+        secondary: '#F9FAFF'
       }
     },
   },
